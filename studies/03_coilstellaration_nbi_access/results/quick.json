@@ -1,0 +1,28 @@
+{
+  "preset": "quick",
+  "wall_seconds": 52.5,
+  "ran_at": "2026-11-12T08:17:47+00:00",
+  "python": "3.12.3",
+  "codes": {
+    "freeofcharge": {
+      "version": "0.1.0",
+      "commit": "fd2375f5aa"
+    },
+    "plasmacoll": {
+      "version": "0.5.0",
+      "commit": "009cd9f2c6"
+    },
+    "plasma-plots": {
+      "version": "0.2.5",
+      "commit": "5f832b09ea"
+    },
+    "cunumpy": {
+      "version": "0.7.2",
+      "commit": "159a7128ba"
+    },
+    "simgeometry": {
+      "version": "0.2.1",
+      "commit": "f0fe240501"
+    }
+  }
+}

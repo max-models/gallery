@@ -1,7 +1,10 @@
 {
   "source": "max-models/gallery-private",
-  "commit": "99452fd510a512858b96c673528380e57c0c0b36",
+  "commit": "289cd8b0274b3d98d891301cc26dfe2bfb90f0ff",
   "studies": [
-    "01_exponential_decay"
+    "01_exponential_decay",
+    "02_einzel_lens_optimisation",
+    "03_coilstellaration_nbi_access",
+    "04_w7x_nbi_transport"
   ]
 }

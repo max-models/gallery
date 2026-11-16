@@ -11,8 +11,18 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
   "gallery-tools @ git+https://github.com/spokes3d/gallery-template@devel",
+  "beamtracer",
+  "freeofcharge",
+  "gvec",
+  "huggingface-hub",
+  "jax",
   "matplotlib",
   "numpy",
+  "pandas",
+  "plasma-plots",
+  "pyarrow",
+  "slowcooker; python_version>='3.12'",
+  "xarray",
 ]
 optional-dependencies.docs = [
   "ipykernel",
@@ -29,4 +39,7 @@ ini_options.testpaths = [ "tests" ]
 ini_options.addopts = "-ra"
 
 [tool.uv.sources]
+beamtracer = { git = "https://github.com/max-models/beamtracer", branch = "devel" }
+freeofcharge = { git = "https://github.com/max-models/freeofcharge", branch = "devel" }
 plasma-plots = { git = "https://github.com/max-models/plasma-plots", branch = "devel" }
+slowcooker = { git = "https://github.com/max-models/slowcooker", branch = "devel" }

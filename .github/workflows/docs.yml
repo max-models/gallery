@@ -25,6 +25,7 @@ jobs:
     with:
       node-version: "24"
       notebooks: false
+      apt-packages: gfortran cmake pkg-config liblapack-dev libnetcdff-dev
       pre-build: uv run gallery build --cached-only
       smoke-paths: |
         studies/index.html

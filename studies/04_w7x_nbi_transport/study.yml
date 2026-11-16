@@ -1,0 +1,28 @@
+# Read by gallery-tools without running the script (see the Adding a study guide).
+category: Stellarator transport
+kind: example
+public: true
+codes:
+- slowcooker
+- freeofcharge
+level: advanced
+summary: >-
+  W7-X heated by two neutral beams in TORAX on GVEC geometry: the temperatures, the neoclassical share
+  of the heat flux and the ambipolar E_r against the anomalous diffusivity.
+docs_preset: quick
+runtime: about 4 minutes (quick); about 1 minute (smoke)
+status: >-
+  Indicative, not a prediction. The chain (GVEC geometry in TORAX, freeofcharge's beams, the GVEC
+  re-solve) is verified in slowcooker's and freeofcharge's tests; the stellarator neoclassical model's
+  prefactors are not yet verified against the literature or a monoenergetic database, the effective
+  ripple is assumed (0.01), the beam geometry is a stand-in and the anomalous transport a constant.
+  The comparison with W7-X is with published neoclassical shares, from abstracts only.
+figures:
+- >-
+  Electron (solid) and ion (dashed) temperatures at the end of the run, for each anomalous diffusivity
+  of the scan.
+- >-
+  The neoclassical share of the ion (solid) and electron (dashed) heat flux, chi_neo / (chi_neo +
+  chi_an), against the radius, with the band of 30 to 40 % that W7-X experiments report for the losses
+  at high temperatures.
+- The ambipolar radial electric field of the model at the end of the run.
