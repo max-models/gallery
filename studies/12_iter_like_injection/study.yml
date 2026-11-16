@@ -1,0 +1,20 @@
+# Read by gallery-tools without running the script (see the Adding a study guide).
+category: Tokamak injection
+kind: example
+public: true
+codes:
+- freeofcharge
+- plasmacoll
+- plasma-plots
+level: advanced
+summary: >-
+  A 16.5 MW, 1 MeV deuterium beam in an ITER-size Solov'ev plasma: the shine-through against the
+  density, and the heating and current it drives.
+docs_preset: full
+runtime: about 15 seconds
+status: >-
+  An example, not a verification of ITER's beams: a Solov'ev equilibrium of ITER's size, wider
+  inboard than ITER, straight markers attenuated with Suzuki's cross sections, and fast ions
+  slowed down on their birth surfaces without orbit width. The trapped-electron correction of the
+  driven current is a fit still to be checked. The deposition and slowing down are checked against
+  ASCOT5 in the study "ASCOT5 benchmark".

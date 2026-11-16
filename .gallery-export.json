@@ -1,10 +1,18 @@
 {
   "source": "max-models/gallery-private",
-  "commit": "289cd8b0274b3d98d891301cc26dfe2bfb90f0ff",
+  "commit": "98716415788eb630e5db95c2caf21cbaa9e82fe3",
   "studies": [
     "01_exponential_decay",
     "02_einzel_lens_optimisation",
     "03_coilstellaration_nbi_access",
-    "04_w7x_nbi_transport"
+    "04_w7x_nbi_transport",
+    "05_injector_chain",
+    "06_neutralizer_channel",
+    "07_beamline",
+    "08_negative_ion_extraction",
+    "09_fast_ion_orbits",
+    "10_w7x_current_drive",
+    "11_ascot5_benchmark",
+    "12_iter_like_injection"
   ]
 }

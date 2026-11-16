@@ -1,0 +1,25 @@
+# Read by gallery-tools without running the script (see the Adding a study guide).
+category: Tokamak injection
+kind: verification
+public: true
+codes:
+- freeofcharge
+- plasmacoll
+- plasma-plots
+level: advanced
+summary: >-
+  freeofcharge's neutral-beam deposition, shine-through, heating and fast-ion current against
+  ASCOT5 (BBNBI5 and ascot5_main) on an ASDEX Upgrade-sized tokamak case.
+docs_preset: full
+runtime: about 15 seconds (ASCOT5's side is stored; its slowing down with orbits took 25 minutes)
+status: >-
+  Verifies the deposition and the local slowing down: the shine-through agrees with BBNBI5 within
+  its Monte Carlo error at all three densities (ratios 0.997, 1.012 and 0.91, the last from 47 of
+  BBNBI5's 50000 markers); without orbits the electron and ion
+  heating are 0.96 and 0.95 of ASCOT5's, the fast ions 0.96, the fast-ion energy 0.92 and the
+  fast-ion current of the local pitch 0.98. With orbits the fast-ion current is 1.18 and the
+  electron heating 0.91 of ASCOT5's: freeofcharge keeps every ion on its birth surface, and that
+  the orbit width causes the difference is likely but not shown. The driven current with
+  shielding (1.04 and 0.87) compares two trapped-electron corrections, not the slowing down.
+  ASCOT5's profiles come from 1000 slowing-down markers, 10 % to 20 % noise per shell; its run is
+  not repeated here.

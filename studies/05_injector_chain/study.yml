@@ -1,0 +1,25 @@
+# Read by gallery-tools without running the script (see the Adding a study guide).
+category: Neutral-beam injection
+kind: example
+public: true
+codes:
+- freeofcharge
+- wellbalanced
+- tree-d-3d
+- plasmacoll
+- plasma-plots
+level: advanced
+summary: >-
+  An ITER-size negative-ion injector from the RF source to current drive, one stage per code,
+  scanned over the RF power and the neutralizer gas.
+docs_preset: full
+runtime: >-
+  about 2 minutes on an idle 4-core machine, most of it the slit optics (9.5 minutes measured
+  on a heavily loaded one); the smoke preset about 10 seconds
+status: >-
+  An illustration of the chain, not a design: the source rates and the gas cross sections are
+  illustrative, the negative-ion share of the source is an input, and the accelerator is a fixed
+  transmission with an adiabatic shrink of the angles. The slit V-curve has no meniscus, so its
+  minimum is not that of a real beamlet. The only check is the neutralizer's rate equations against
+  their closed form (to 1e-14).
+front_figure: 5
