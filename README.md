@@ -10,6 +10,14 @@ Site: <https://max-models.github.io/gallery/>
 | [Einzel lens optimisation](https://max-models.github.io/gallery/studies/einzel-lens-optimisation/) | verification | beamtracer, plasma-plots |
 | [CoilStellaration NBI access](https://max-models.github.io/gallery/studies/coilstellaration-nbi-access/) | example | freeofcharge, plasma-plots |
 | [W7-X NBI transport](https://max-models.github.io/gallery/studies/w7x-nbi-transport/) | example | slowcooker, freeofcharge |
+| [Injector chain](https://max-models.github.io/gallery/studies/injector-chain/) | example | freeofcharge, wellbalanced, tree-d-3d, plasmacoll, plasma-plots |
+| [Neutralizer channel](https://max-models.github.io/gallery/studies/neutralizer-channel/) | example | beamtracer, wellbalanced, opencr, plasmacoll, plasma-plots |
+| [Beamline power balance](https://max-models.github.io/gallery/studies/beamline/) | example | beamtracer, plasmacoll, simgeometry, plasma-plots |
+| [Negative-ion extraction](https://max-models.github.io/gallery/studies/negative-ion-extraction/) | example | beamtracer, plasma-plots |
+| [Fast-ion orbits](https://max-models.github.io/gallery/studies/fast-ion-orbits/) | example | freeofcharge, plasmacoll, simgeometry, slowcooker |
+| [W7-X current drive](https://max-models.github.io/gallery/studies/w7x-current-drive/) | example | freeofcharge, slowcooker |
+| [ASCOT5 benchmark](https://max-models.github.io/gallery/studies/ascot5-benchmark/) | verification | freeofcharge, plasmacoll, plasma-plots |
+| [ITER-like injection](https://max-models.github.io/gallery/studies/iter-like-injection/) | example | freeofcharge, plasmacoll, plasma-plots |
 
 ## Running a study
 

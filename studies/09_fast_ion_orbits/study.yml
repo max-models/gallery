@@ -1,0 +1,25 @@
+# Read by gallery-tools without running the script (see the Adding a study guide).
+category: Stellarator transport
+kind: example
+public: true
+codes:
+- freeofcharge
+- plasmacoll
+- simgeometry
+- slowcooker
+level: advanced
+summary: >-
+  Beam ions followed as guiding centres with Monte Carlo collisions to thermalisation or the wall:
+  pusher checks in Solov'ev tokamaks, orbits against the local slowing down, and losses and wall
+  loads in W7-X.
+docs_preset: quick
+runtime: about 4 minutes (quick); about 30 seconds (smoke)
+status: >-
+  The tokamak part verifies the pusher (energy and p_phi kept to 1e-7 or better, the passing-orbit
+  width equal to the exact value from p_phi) and the collisions (heating, fast ions and their energy
+  within about 1 % of the local slowing down at 10 T). The W7-X part is an example, not a prediction:
+  GVEC's W7-X example at reduced resolution (not DESC's of the freeofcharge tutorial), a wall 10 cm
+  off its boundary, stand-in injectors, about 300 markers, so the losses (a few percent of the
+  markers, about 1 % of the power) and the wall-load map are dominated by Monte Carlo noise. Not
+  compared with ASCOT5.
+front_figure: 1

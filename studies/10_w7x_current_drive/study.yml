@@ -1,0 +1,22 @@
+# Read by gallery-tools without running the script (see the Adding a study guide).
+category: Stellarator transport
+kind: example
+public: true
+codes:
+- freeofcharge
+- slowcooker
+level: advanced
+summary: >-
+  Beam-driven current in W7-X with the electrons' shielding on 3D flux surfaces, with and without
+  the trapped-electron correction from the effective trapped fraction.
+docs_preset: quick
+runtime: about 30 seconds (quick); about 10 seconds (smoke)
+status: >-
+  An example, not a verification. The effective trapped fraction and the shielding come from
+  freeofcharge's tested routines, but L31(f_t) is the axisymmetric coefficient without the
+  stellarator geometric factor, the fast ions slow down on their birth surface (no orbits, no
+  losses), and the beams and the plasma are stand-ins. The equilibrium is GVEC's W7-X example at
+  reduced resolution (slowcooker's), not DESC's of the freeofcharge tutorial: its mirror term is
+  stronger, so f_t is about 0.5 to 0.6 instead of about 0.3 and the correction raises the current
+  more.
+front_figure: 4

@@ -1,0 +1,22 @@
+# Read by gallery-tools without running the script (see the Adding a study guide).
+category: Neutral-beam injection
+kind: example
+public: true
+codes:
+- beamtracer
+- plasmacoll
+- simgeometry
+- plasma-plots
+level: advanced
+summary: >-
+  A neutral-beam line from the grid to the port with beamtracer.beamline: aimed beamlets, the
+  neutralizer's charge states, the residual-ion dump, a duct with gas and stray field, and where the
+  power goes.
+docs_preset: full
+runtime: about 2 minutes (120 000 markers)
+status: >-
+  An example of the beamline pieces, not a design or a verification: the geometry and the numbers are
+  illustrative and the reionization cross section is a placeholder. What it checks is that the power
+  balance closes (the port and the walls account for the beam plus the fields' work). Neutralization is
+  imposed as fixed fractions, not computed; transitions back to the neutral state in the duct are not
+  followed, and the beamlets carry no broad halo component.

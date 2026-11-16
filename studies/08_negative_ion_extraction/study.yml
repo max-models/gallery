@@ -1,0 +1,22 @@
+# Read by gallery-tools without running the script (see the Adding a study guide).
+category: Ion sources and extraction
+kind: example
+public: true
+codes:
+- beamtracer
+- plasma-plots
+level: advanced
+summary: >-
+  An H- beamlet and its co-extracted electrons in one self-consistent BeamOptics solve with a
+  Boltzmann plasma meniscus, at a few extraction voltages.
+docs_preset: quick
+runtime: >-
+  about 1 to 1.5 minutes with OMP_NUM_THREADS=1 (five solves of 8 to 15 s on the 0.1 mm mesh of
+  beamtracer's example); with OpenMP threads on a busy machine the solves become many times slower
+status: >-
+  An example of the steady negative-ion model, not a design or a verification: the geometry is
+  illustrative and the electron current is an input, not a result. It reproduces the trend of
+  beamtracer's example (41 mrad at 10 kV down to 16 mrad at 4 kV) and shows that the Vlasov
+  iteration settles where the beam clears the extraction grid (8 and 10 kV) and not, within 40
+  iterations, where it grazes it (4 to 6 kV). Not compared with a measurement or a PIC model of the
+  source, and without the magnetic fields that would dump the electrons.
