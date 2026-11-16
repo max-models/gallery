@@ -1,0 +1,43 @@
+# Read by gallery-tools without running the script (see the Adding a study guide).
+category: Stellarator injection
+kind: example
+public: true
+codes:
+- freeofcharge
+- plasma-plots
+level: advanced
+summary: >-
+  Which horizontal tangential neutral-beam lines reach the plasma between the coils, across CoilStellaration's
+  coilsets: the admissible fraction against the coil–plasma distance requirement and the number of
+  coils, in minor radii.
+docs_preset: quick
+runtime: >-
+  about 1 minute (quick); about 1.5 to 2 hours (full, 3 s per instance), plus a download of up to
+  2.5 GB once
+status: >-
+  A geometric screening, not a design: straight beams without divergence in the plane Z = 0, coils
+  as round tubes around their filaments, no vessel or ports; the coil size comes from the coil–coil
+  distance requirement and the beam radius is assumed. The page shows the quick preset (17 instances,
+  one per field-period and coil-number combination), too few to separate the requirements' effects;
+  the full preset (2000 instances) is for that and has not been run. The expanded coilsets reproduce
+  the dataset's distance metrics.
+figures:
+- >-
+  Access map of one instance (3 field periods, 6 coils per half period): the clearance c/a of each
+  horizontal tangential line, against the toroidal angle of its tangency point over one field period
+  and its tangency radius; white where the line misses the plasma. Hatched: c at least the headline
+  gap g = d_cc/2 + 0.15 a, the admissible lines.
+- >-
+  The same instance seen from above: the coils and the plasma's cut by Z = 0, with the line of largest
+  clearance at three tangency radii (from its start to its tangency point).
+- >-
+  The best clearance per tangency radius (the largest over the toroidal angle), every instance, coloured
+  by the coils per half period.
+- >-
+  Admissible fraction at the headline gap against, from top to bottom, the coil–plasma distance
+  requirement, the coil–plasma distance the coilset reaches (the dataset's metric) and the coils per
+  half period, coloured by the
+  number of field periods; open markers for coilsets with a mean field error above 1 %.
+- >-
+  Admissible fraction against the gap g = r_coil + r_beam that a line needs, every instance, coloured
+  by the coils per half period; the dots are the headline gaps.

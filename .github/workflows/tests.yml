@@ -17,6 +17,9 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
+      - name: Install the system packages the codes need
+        run: sudo apt-get update && sudo apt-get install -y gfortran cmake pkg-config liblapack-dev libnetcdff-dev
+
       - uses: astral-sh/setup-uv@v7
         with:
           python-version: "3.12"

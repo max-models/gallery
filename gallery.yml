@@ -8,6 +8,10 @@ site:
 codes:
 - numpy
 - matplotlib
+- beamtracer
+- freeofcharge
+- plasma-plots
+- slowcooker
 private_codes:
 - picnic
 fields:
