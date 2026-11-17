@@ -10,13 +10,16 @@ codes:
 - plasma-plots
 level: advanced
 summary: >-
-  A 1 MeV negative-ion beam traced through one channel of a plasma neutralizer, iterated with a
-  global model of the plasma it makes, against the beam's divergence.
+  A 1 MeV negative-ion beam traced through one channel of ITER's kind of gas neutralizer, iterated
+  with a global model of the weak plasma it makes, against the beam's divergence; and the same
+  channel with cusp-confined plasma (a DEMO concept).
 docs_preset: full
-runtime: about 4.5 minutes measured on a loaded 4-core machine; the smoke preset under a minute
+runtime: about 30 seconds with OMP_NUM_THREADS=1 (minutes with many threads on a busy machine); the smoke preset a few seconds
 status: >-
-  An example of the coupling, not a neutralizer design: the beam's cross sections are illustrative
-  placeholders, the channel is planar (2D) with uniform gas and plasma, and the plasma is a global
+  An example of the coupling, not a neutralizer design. The traced channel is a gas neutralizer as
+  in ITER's injectors (no confinement of the beam's plasma); the beam-driven plasma neutralizer
+  with magnetic cusps, a DEMO concept, is compared only in the axis model. The beam's cross
+  sections are illustrative placeholders, the channel is planar (2D) with uniform gas and plasma, and the plasma is a global
   model. It checks that the traced channel reproduces the axis model for a parallel beam, and that
   for a diverging beam the neutral share of the transmitted beam does not change, so the loss is
   geometric. The full preset takes a time step of a whole cell and a fixed-point tolerance of 1e-3,

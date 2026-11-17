@@ -1,28 +1,30 @@
 r"""Neutralizer channel.
 
-A 1 MeV, 10 A deuterium negative-ion beam crosses one channel of a beam-driven plasma
-neutralizer, 3 m long and 10 cm wide. On the gas, and on the plasma it makes itself, the
-beam changes charge state; the plasma is a wellbalanced global model of the channel, fed
-by the beam's stripped and secondary electrons. Alone, that model treats the beam as a
-line integral along the axis. Here beamtracer traces it instead
-(`beamtracer.neutralizer.NeutralizerChannel`): `BeamOptics` trajectories through the
-channel, each carrying its charge-state fractions on the gas and the plasma, and the
-plasma takes its sources from the traced paths; the two are iterated to a fixed point.
-The study scans the beam's divergence at the entrance.
+A 1 MeV, 10 A deuterium negative-ion beam crosses one channel of a gas neutralizer, 3 m
+long and 10 cm wide, the size of a channel of ITER's injectors. On the D$_2$ gas, and on
+the weak plasma it makes there itself, the beam changes charge state; the plasma is a
+wellbalanced global model of the channel, fed by the beam's stripped and secondary
+electrons. Alone, that model treats the beam as a line integral along the axis. Here
+beamtracer traces it instead (`beamtracer.neutralizer.NeutralizerChannel`):
+`BeamOptics` trajectories through the channel, each carrying its charge-state fractions,
+and the plasma takes its sources from the traced paths; the two are iterated to a fixed
+point. The study scans the beam's divergence at the entrance.
 
 With a parallel beam the traced result is the axis model's. As the beam diverges, more of
 it hits the walls, about a fifth at 10 mrad, and the neutral fraction falls from 0.57 to
-about 0.47. The neutral share of the
-beam that leaves stays at 0.57: every transmitted particle crosses the same uniform gas
-and plasma over the same length, and the plasma's stripping is small, so the loss is all
-geometry. The neutrals that leave diverge less than the beam entered, since the wide
-angles are the ones lost.
+about 0.47. The neutral share of the beam that leaves stays at 0.57: the loss is all
+geometry. The neutrals that leave diverge less than the beam entered.
+
+The same channel with magnetic cusps on its walls is the beam-driven plasma neutralizer,
+a DEMO concept, not ITER's design: the cusps confine the beam's plasma so that it strips
+too. The table compares the two in the axis model: the cusps raise the plasma density
+about thirteenfold, but at below 0.2 % ionization the neutral fraction does not move.
 
 The beam's cross sections are illustrative placeholders, not data (the plasma rates are
-OpenCR's): the figures show what the coupled models compute, not what a neutralizer
-achieves.
+OpenCR's).
 
-Compared: the traced channel with the global model alone (the beam along the axis).
+Compared: the traced channel with the global model alone; the gas neutralizer with the
+cusp-confined one.
 
 Reference: beamtracer's example `examples/neutralizer_channel_2d.py`.
 """
@@ -59,11 +61,46 @@ SHOWN = 0.01  # rad: the divergence whose trajectories are drawn
 STATES = ("-", "0", "+")
 
 
-def neutralizer():
-    """The channel with OpenCR's plasma rates (the beam data are placeholders, which warn)."""
+def neutralizer(cusp=None):
+    """The channel with OpenCR's plasma rates (the beam data are placeholders, which warn).
+
+    Without ``cusp`` it is ITER's gas neutralizer: nothing confines the beam's plasma.
+    """
     with warnings.catch_warnings():
         warnings.simplefilter("ignore", UserWarning)
-        return deuterium_neutralizer(gas_inflow=GAS_INFLOW)
+        return deuterium_neutralizer(gas_inflow=GAS_INFLOW, cusp=cusp)
+
+
+def default_cusp():
+    """The magnetic cusps of wellbalanced's default channel (the DEMO concept)."""
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", UserWarning)
+        return deuterium_neutralizer().cusp
+
+
+def compare_concepts() -> list[dict]:
+    """The axis model of the gas neutralizer and of the cusp-confined channel."""
+    rows = []
+    concepts = (
+        ("gas neutralizer (ITER)", None),
+        ("cusp-confined (DEMO concept)", default_cusp()),
+    )
+    for name, cusp in concepts:
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore", UserWarning)
+            result = neutralizer(cusp).solve()
+        gas = float(np.mean(result.gas_density))
+        ne = float(result.plasma.electron_density)
+        rows.append(
+            {
+                "concept": name,
+                "electron_density": ne,
+                "gas_density": gas,
+                "ionization": ne / (ne + gas),
+                "neutral": float(result.neutral_fraction),
+            }
+        )
+    return rows
 
 
 def simulate(preset: str = "full") -> dict:
@@ -96,7 +133,12 @@ def simulate(preset: str = "full") -> dict:
                 "iterations": result.iterations,
             }
         )
-    return {"preset": preset, "runs": runs, "runtime": time.time() - start}
+    return {
+        "preset": preset,
+        "runs": runs,
+        "concepts": compare_concepts(),
+        "runtime": time.time() - start,
+    }
 
 
 def table(result: dict) -> str:
@@ -114,6 +156,17 @@ def table(result: dict) -> str:
             f"{run['neutral'] / run['transmission']:.3f} | "
             f"{1e3 * run['neutral_divergence']:.1f} | {run['electron_density']:.2e} | "
             f"{run['iterations']}{'' if run['converged'] else ' (not converged)'} |"
+        )
+    lines += [
+        "",
+        "| channel (axis model) | n_e (m^-3) | gas (m^-3) | ionization | neutral fraction |",
+        "|---|---|---|---|---|",
+    ]
+    for row in result.get("concepts", []):
+        lines.append(
+            f"| {row['concept']} | {row['electron_density']:.2e} | "
+            f"{row['gas_density']:.2e} | {100 * row['ionization']:.2f} % | "
+            f"{row['neutral']:.4f} |"
         )
     return "\n".join(lines)
 
