@@ -1,6 +1,6 @@
 {
   "source": "max-models/gallery-private",
-  "commit": "c61423b5b36cf4b58024426a2c0b319c4493bea9",
+  "commit": "274dd97277c639e2e1bbead59bf15c7ba8045863",
   "studies": [
     "01_exponential_decay",
     "02_einzel_lens_optimisation",
@@ -13,6 +13,7 @@
     "09_fast_ion_orbits",
     "10_w7x_current_drive",
     "11_ascot5_benchmark",
-    "12_iter_like_injection"
+    "12_iter_like_injection",
+    "13_positive_ion_extraction"
   ]
 }
