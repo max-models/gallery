@@ -1,0 +1,28 @@
+# Read by gallery-tools without running the script (see the Adding a study guide).
+category: Ion sources and extraction
+kind: example
+public: true
+codes:
+- freeofcharge
+- wellbalanced
+- beamtracer
+- plasma-plots
+level: advanced
+summary: >-
+  The plasma of a deuterium RF source feeds a self-consistent positive-ion beamlet with a
+  Boltzmann-electron meniscus, giving its perveance V-curve at three RF powers.
+docs_preset: full
+runtime: >-
+  about 4 minutes with OMP_NUM_THREADS=1 (21 solves of 7 to 25 s on a 0.05 mm mesh); the smoke
+  preset a few seconds
+status: >-
+  An example, not a design or a verification: the source rates and the geometry are
+  illustrative and nothing is compared with a measurement. The plasma boundary is held at the
+  plasma potential 0.5 mm in front of the PG and the ions enter there at the Bohm speed, as in
+  IBSimu: the meniscus is free downstream of that plane but cannot retreat beyond it, so at the
+  lowest perveances the extraction field reaches the boundary. A longer plasma region is not a
+  steady solution of this model, which has no presheath. Halving the mesh from 0.1 to 0.05 mm
+  changes the divergence by up to about 10 %; the page uses 0.05 mm (the Debye length is about
+  0.05 mm). Two solves at 200 kW end in limit cycles of a few volts (marked); their divergence
+  matches the other powers within 0.2 mrad. The ions are D2+ only, with no D+ or D3+, and there
+  is no downstream acceleration.
