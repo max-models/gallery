@@ -1,0 +1,16 @@
+category: Plasma instabilities
+kind: verification
+public: true
+codes: [picnic, plasma-plots]
+level: intermediate
+docs_preset: full
+runtime: about 13 minutes (the threshold curves take half)
+summary: The threshold and growth of the current-driven ion acoustic instability from picnic against kinetic theory.
+status: >-
+  The fastest mode of each unstable run agrees with the kinetic dielectric of the two drifting
+  Maxwellians within 7 % and is named ion acoustic; the run below threshold shows no growth.
+  This needs 2^18 markers per species and a running mean of the potential over 40/ω_pe: the
+  ion waves grow only a few e-foldings above the electrons' noise, so the modes away from the
+  fastest are found irregularly (one at T_e/T_i = 20 is 40 % high). The unstable runs all sit
+  at u = v_te; the threshold itself is shown by theory and one stable run only. Real
+  frequencies, saturation (anomalous resistivity) and the real mass ratio are not compared.

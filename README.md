@@ -19,6 +19,9 @@ Site: <https://max-models.github.io/gallery/>
 | [ASCOT5 benchmark](https://max-models.github.io/gallery/studies/ascot5-benchmark/) | verification | freeofcharge, plasmacoll, plasma-plots |
 | [ITER-like injection](https://max-models.github.io/gallery/studies/iter-like-injection/) | example | freeofcharge, plasmacoll, plasma-plots |
 | [Positive-ion extraction](https://max-models.github.io/gallery/studies/positive-ion-extraction/) | example | freeofcharge, wellbalanced, beamtracer, plasma-plots |
+| [Beam instabilities](https://max-models.github.io/gallery/studies/beam-instabilities/) | verification | picnic, plasma-plots |
+| [Ion acoustic instability](https://max-models.github.io/gallery/studies/ion-acoustic-instability/) | verification | picnic, plasma-plots |
+| [Multi-species streaming](https://max-models.github.io/gallery/studies/multispecies-streaming/) | verification | picnic, plasma-plots |
 
 ## Running a study
 
