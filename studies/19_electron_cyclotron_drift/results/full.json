@@ -1,0 +1,46 @@
+{
+  "preset": "full",
+  "wall_seconds": 112.2,
+  "ran_at": "2026-11-25T04:12:01+00:00",
+  "python": "3.13.18",
+  "codes": {
+    "beamtracer": {
+      "version": "0.1.0",
+      "commit": "3eb4480bb5"
+    },
+    "freeofcharge": {
+      "version": "0.1.0",
+      "commit": "162e372945"
+    },
+    "matplotlib": {
+      "version": "3.11.2"
+    },
+    "numpy": {
+      "version": "2.5.5"
+    },
+    "picnic": {
+      "version": "0.1",
+      "commit": "0f143a5"
+    },
+    "plasma-plots": {
+      "version": "0.3.0",
+      "commit": "c5e9de793d"
+    },
+    "plasmacoll": {
+      "version": "0.6.0",
+      "commit": "46bb014e16"
+    },
+    "simgeometry": {
+      "version": "0.2.1",
+      "commit": "cfd4b5e27b"
+    },
+    "tree-d-3d": {
+      "version": "0.1.0",
+      "commit": "c14fbb42a9"
+    },
+    "wellbalanced": {
+      "version": "0.1.0",
+      "commit": "1e365ba74a"
+    }
+  }
+}

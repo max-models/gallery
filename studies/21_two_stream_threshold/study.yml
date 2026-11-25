@@ -1,0 +1,14 @@
+category: Plasma instabilities
+kind: verification
+public: true
+codes: [picnic, plasma-plots]
+level: intermediate
+docs_preset: full
+runtime: about 4 minutes
+summary: How warming two electron beams slows and finally stops the two-stream instability.
+status: >-
+  The growth rate agrees with the kinetic theory within 3 % for beams up to half the drift
+  speed, and the case beyond the threshold does not grow. Close to the threshold (v_th = 0.65
+  u, γ = 0.055 ω_pe) the measured rate is 33 % low: the growth there spans only about four
+  e-foldings above the warm beams' noise, even with 2^17 markers per beam. The warmer cases are
+  left unnamed by the report. Saturation is not compared.

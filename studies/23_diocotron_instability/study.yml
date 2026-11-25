@@ -1,0 +1,14 @@
+category: Plasma instabilities
+kind: verification
+public: true
+codes: [picnic, plasma-plots]
+level: intermediate
+docs_preset: full
+runtime: about 6 minutes
+summary: The diocotron instability of an electron layer against the linear drift–Poisson eigenvalue.
+status: >-
+  Inside the unstable band (ka = 0.2 to 0.6) the growth rate agrees with the linear
+  drift–Poisson eigenvalue within 4 %. Beyond it (ka = 0.8 to 1.2) the theory has no growth
+  and the mode only oscillates around the seed; the small rates shown there (0.01 to 0.03
+  ω_D) are fits to those oscillations, not growth. Guiding-centre electrons only; the real
+  frequency and the vortex dynamics after saturation are not compared.
