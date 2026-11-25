@@ -1,0 +1,16 @@
+category: Plasma instabilities
+kind: verification
+public: true
+codes: [picnic, plasma-plots]
+level: intermediate
+docs_preset: full
+runtime: about 1.5 minutes
+summary: Electron acoustic and H⁻/H⁺ ion–ion streaming growth rates from picnic against kinetic theory.
+status: >-
+  The H⁻/H⁺ streaming modes agree with the kinetic dielectric within 3 % and the instability is
+  named ion–ion streaming. For the electron acoustic case only the fastest mode is close
+  (within 2 %); its neighbour is 30 % low and the rest are not found, since the hot electrons'
+  noise leaves few e-foldings (the report is run with R² ≥ 0.9 instead of 0.95), and the
+  report does not name it. Slow ion waves under hot electrons (ion–ion acoustic) are not
+  covered at this number of markers. Real frequencies, saturation and the real mass ratio are
+  not compared.

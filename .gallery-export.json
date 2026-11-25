@@ -1,6 +1,6 @@
 {
   "source": "max-models/gallery-private",
-  "commit": "e80ab2fd0e0b97d7c51d4021cfaf55ce4ddf50a1",
+  "commit": "df71b316df7ce315412b6422b8b015c78a0339b8",
   "studies": [
     "01_exponential_decay",
     "02_einzel_lens_optimisation",
@@ -14,6 +14,9 @@
     "10_w7x_current_drive",
     "11_ascot5_benchmark",
     "12_iter_like_injection",
-    "13_positive_ion_extraction"
+    "13_positive_ion_extraction",
+    "16_beam_instabilities",
+    "17_ion_acoustic_instability",
+    "18_multispecies_streaming"
   ]
 }

@@ -1,0 +1,17 @@
+category: Plasma instabilities
+kind: verification
+public: true
+codes: [picnic, plasma-plots]
+level: introductory
+docs_preset: full
+runtime: about 2 minutes
+summary: Two-stream, beam–plasma, bump-on-tail and Buneman growth rates from picnic against kinetic theory.
+status: >-
+  The growth rates of the linearly unstable box modes agree with the kinetic dielectric of the
+  same drifting Maxwellians within 3 % for the two-stream, beam–plasma and Buneman cases, and
+  the fastest mode is the predicted one in every case. The kinetic bump-on-tail rate is 18 %
+  low: its warm, noisy plasma puts the start of the automatic fit window in the noise (11 %
+  with twice the markers). Slowly growing modes are missed when the fastest saturates first;
+  modes driven by nonlinear coupling are marked, not compared; one Buneman mode grows where
+  the theory has none. The naming is right except for the bump-on-tail, left unnamed. The real
+  frequencies, the saturation and the real mass ratio are not compared.
