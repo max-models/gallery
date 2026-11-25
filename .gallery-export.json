@@ -1,6 +1,6 @@
 {
   "source": "max-models/gallery-private",
-  "commit": "274dd97277c639e2e1bbead59bf15c7ba8045863",
+  "commit": "e80ab2fd0e0b97d7c51d4021cfaf55ce4ddf50a1",
   "studies": [
     "01_exponential_decay",
     "02_einzel_lens_optimisation",
