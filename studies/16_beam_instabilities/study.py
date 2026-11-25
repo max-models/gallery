@@ -188,12 +188,11 @@ def simulate(preset: str = "full") -> dict:
 def plot(result: dict) -> None:
     """γ(k) against theory, the fastest mode's history and the final phase space."""
     names = list(result)
-    cols = min(3, len(names))
-    rows = int(np.ceil(len(names) / cols))
+    cols, rows = 1, len(names)  # one column: panels stacked, readable on a phone
     with plasma_plots.figure(
         rows,
         cols,
-        figsize=(3.2 * cols, 2.8 * rows),
+        figsize=(6, 2.6 * rows),
         caption="Growth rate against wavenumber: picnic's box modes (filled) on the "
         "most unstable root of the kinetic dielectric of the same drifting Maxwellians "
         "(line). Hollow: modes driven by two growing modes (nonlinear coupling, at the "
@@ -217,7 +216,7 @@ def plot(result: dict) -> None:
     with plasma_plots.figure(
         rows,
         cols,
-        figsize=(3.2 * cols, 2.8 * rows),
+        figsize=(6, 2.6 * rows),
         caption="The amplitude of the potential's Fourier modes against time: growth "
         "from the marker noise, exponential over several e-foldings, then saturation by "
         "trapping. Dashed: the theoretical growth rate of the fastest mode.",
@@ -249,7 +248,7 @@ def plot(result: dict) -> None:
     with plasma_plots.figure(
         rows,
         cols,
-        figsize=(3.2 * cols, 2.8 * rows),
+        figsize=(6, 2.6 * rows),
         caption="The phase space at the end of each run, a sample of the markers of "
         "each species: the cold beams roll up into trapping vortices, the warm beam of "
         "the bump-on-tail case only spreads, and the Buneman ions (orange) start to heat.",

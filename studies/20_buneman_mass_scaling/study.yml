@@ -1,0 +1,14 @@
+category: Plasma instabilities
+kind: verification
+public: true
+codes: [picnic, plasma-plots]
+level: intermediate
+docs_preset: full
+runtime: about 1 minute
+summary: The cube-root mass scaling of the Buneman growth rate, from picnic against the cold quartic.
+status: >-
+  The growth rate of the fastest mode agrees with the cold quartic within 2 % at every mass
+  ratio from 25 to 1836, and follows the cube-root law as the ions get heavy. The report names
+  the instability Buneman, except at m_i/m_e = 25, where it calls it two-stream (the ions are
+  then almost as mobile as a second electron beam). Real frequencies and saturation are not
+  compared.

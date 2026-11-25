@@ -1,0 +1,15 @@
+category: Plasma instabilities
+kind: verification
+public: true
+codes: [picnic, plasma-plots]
+level: intermediate
+docs_preset: full
+runtime: about 2 minutes
+summary: The electron cyclotron drift instability at its cyclotron resonances, from picnic against kinetic theory.
+status: >-
+  Most resonances found grow at 65 to 98 % of the ECDI root (m = 8 to 12 within 10 %), but
+  the fits cover only about two decades above the electrons' thermal Bernstein noise, even with
+  2^18 markers per species, and several resonances are not found. Two low resonances (m = 2,
+  4) grow where the theory has little or no growth, and the report names the fastest picnic
+  mode "Buneman" rather than ECDI. The theory's root finder misses the growing root at m = 18
+  and 20. Real frequencies, saturation and transport are not compared.

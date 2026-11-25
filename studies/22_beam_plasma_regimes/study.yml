@@ -1,0 +1,14 @@
+category: Plasma instabilities
+kind: verification
+public: true
+codes: [picnic, plasma-plots]
+level: intermediate
+docs_preset: full
+runtime: about 3 minutes
+summary: The transition of the beam–plasma instability from reactive to kinetic as the beam warms.
+status: >-
+  The growth rate agrees with the kinetic theory within 2 % at every beam spread, across the
+  transition from the cold-beam (reactive) rate to the kinetic bump-on-tail regime; the
+  warmest case is not named by the report. Real frequencies and the saturation (trapping
+  against a quasilinear plateau, shown only qualitatively in the final distributions) are not
+  compared.

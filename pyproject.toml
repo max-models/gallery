@@ -17,6 +17,7 @@ dependencies = [
   "huggingface-hub",
   "jax",
   "matplotlib",
+  "maybempi",
   "numpy",
   "opencr",
   "pandas",

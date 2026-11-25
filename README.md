@@ -22,6 +22,11 @@ Site: <https://max-models.github.io/gallery/>
 | [Beam instabilities](https://max-models.github.io/gallery/studies/beam-instabilities/) | verification | picnic, plasma-plots |
 | [Ion acoustic instability](https://max-models.github.io/gallery/studies/ion-acoustic-instability/) | verification | picnic, plasma-plots |
 | [Multi-species streaming](https://max-models.github.io/gallery/studies/multispecies-streaming/) | verification | picnic, plasma-plots |
+| [Electron cyclotron drift instability](https://max-models.github.io/gallery/studies/electron-cyclotron-drift/) | verification | picnic, plasma-plots |
+| [Buneman mass scaling](https://max-models.github.io/gallery/studies/buneman-mass-scaling/) | verification | picnic, plasma-plots |
+| [Two-stream threshold](https://max-models.github.io/gallery/studies/two-stream-threshold/) | verification | picnic, plasma-plots |
+| [Beam–plasma regimes](https://max-models.github.io/gallery/studies/beam-plasma-regimes/) | verification | picnic, plasma-plots |
+| [Diocotron instability](https://max-models.github.io/gallery/studies/diocotron-instability/) | verification | picnic, plasma-plots |
 
 ## Running a study
 

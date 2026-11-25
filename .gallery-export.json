@@ -1,6 +1,6 @@
 {
   "source": "max-models/gallery-private",
-  "commit": "df71b316df7ce315412b6422b8b015c78a0339b8",
+  "commit": "3442c17b7bfd500d3c040bd91c53c55c6ab10b9b",
   "studies": [
     "01_exponential_decay",
     "02_einzel_lens_optimisation",
@@ -17,6 +17,11 @@
     "13_positive_ion_extraction",
     "16_beam_instabilities",
     "17_ion_acoustic_instability",
-    "18_multispecies_streaming"
+    "18_multispecies_streaming",
+    "19_electron_cyclotron_drift",
+    "20_buneman_mass_scaling",
+    "21_two_stream_threshold",
+    "22_beam_plasma_regimes",
+    "23_diocotron_instability"
   ]
 }
