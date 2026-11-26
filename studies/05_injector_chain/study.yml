@@ -4,7 +4,7 @@ kind: example
 public: true
 codes:
 - freeofcharge
-- wellbalanced
+- plasma-carafe
 - tree-d-3d
 - plasmacoll
 - plasma-plots

@@ -1,7 +1,7 @@
 r"""Positive-ion extraction.
 
 The plasma of a deuterium RF source feeds one beamlet of a positive-ion injector, like
-those of ASDEX Upgrade, JET or W7-X. freeofcharge's `deuterium_source` (a wellbalanced
+those of ASDEX Upgrade, JET or W7-X. freeofcharge's `deuterium_source` (a carafe
 global model) gives the electron density and temperature and the D$_2^+$ Bohm flux to the
 plasma grid: $j_+ = $ 130, 260 and 520 A/m$^2$ at 100, 200 and 400 kW, with $T_e = 5.8$ eV.
 beamtracer's `BeamOptics` with an `ExtractionPlasma` solves the beamlet in its own field:
@@ -325,7 +325,7 @@ def plot(result: dict) -> None:
 
     source = result["source"]
     caption = (
-        "The source (wellbalanced global model in freeofcharge): the D₂⁺ current density "
+        "The source (carafe global model in freeofcharge): the D₂⁺ current density "
         "to the plasma grid (top) and the electron density (bottom) against the RF power; "
         "the circles mark the powers of the beamlet scans. The electron temperature is "
         f"{source['electron_temperature'][0]:.2f} eV at every power."
