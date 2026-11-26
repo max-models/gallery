@@ -4,7 +4,7 @@ kind: example
 public: true
 codes:
 - freeofcharge
-- wellbalanced
+- plasma-carafe
 - beamtracer
 - plasma-plots
 level: advanced

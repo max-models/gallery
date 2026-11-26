@@ -4,7 +4,7 @@ kind: example
 public: true
 codes:
 - beamtracer
-- wellbalanced
+- plasma-carafe
 - opencr
 - plasmacoll
 - plasma-plots

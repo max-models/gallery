@@ -2,7 +2,7 @@ r"""Injector chain.
 
 A negative-ion neutral-beam injector of ITER's size from source to plasma, one stage per
 code (`freeofcharge.chain`), scanned over the RF power and the neutralizer gas. The
-RF source is a wellbalanced global model; the extracted D$^-$ current density is
+RF source is a carafe global model; the extracted D$^-$ current density is
 30 % of its positive-ion Bohm flux, a normalized perveance of 0.09 to 0.47 against the
 Child-Langmuir limit of a 9 kV, 6 mm first gap. A slit extraction gap solved with
 tree-d-3d (boundary-integral electrodes, meshless space charge) gives the V-curve of the
@@ -236,7 +236,7 @@ def plot(result: dict) -> None:
         1,
         sharex=True,
         figsize=(7, 6),
-        caption="Source (wellbalanced): the extracted D⁻ current density (top) and the "
+        caption="Source (carafe): the extracted D⁻ current density (top) and the "
         "electron density (bottom) against the RF power; the electron temperature is "
         f"{float(st.electron_temperature[0]):.1f} eV at every power.",
     ) as fig:

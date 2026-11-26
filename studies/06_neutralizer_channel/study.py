@@ -3,7 +3,7 @@ r"""Neutralizer channel.
 A 1 MeV, 10 A deuterium negative-ion beam crosses one channel of a gas neutralizer, 3 m
 long and 10 cm wide, the size of a channel of ITER's injectors. On the D$_2$ gas, and on
 the weak plasma it makes there itself, the beam changes charge state; the plasma is a
-wellbalanced global model of the channel, fed by the beam's stripped and secondary
+carafe global model of the channel, fed by the beam's stripped and secondary
 electrons. Alone, that model treats the beam as a line integral along the axis. Here
 beamtracer traces it instead (`beamtracer.neutralizer.NeutralizerChannel`):
 `BeamOptics` trajectories through the channel, each carrying its charge-state fractions,
@@ -37,7 +37,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import plasma_plots
 from beamtracer.neutralizer import NeutralizerChannel
-from wellbalanced.cr import deuterium_neutralizer
+from carafe.cr import deuterium_neutralizer
 
 #: divergences: rms divergences at the entrance [rad]; channel: options of the traced
 #: channel (particles, mesh cell [m], time step per cell, fixed-point tolerance and
@@ -72,7 +72,7 @@ def neutralizer(cusp=None):
 
 
 def default_cusp():
-    """The magnetic cusps of wellbalanced's default channel (the DEMO concept)."""
+    """The magnetic cusps of carafe's default channel (the DEMO concept)."""
     with warnings.catch_warnings():
         warnings.simplefilter("ignore", UserWarning)
         return deuterium_neutralizer().cusp

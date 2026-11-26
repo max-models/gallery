@@ -12,6 +12,7 @@ requires-python = ">=3.11"
 dependencies = [
   "gallery-tools @ git+https://github.com/spokes3d/gallery-template@devel",
   "beamtracer",
+  "carafe",
   "freeofcharge",
   "gvec",
   "huggingface-hub",
@@ -21,6 +22,7 @@ dependencies = [
   "numpy",
   "opencr",
   "pandas",
+  "plasma-carafe",
   "plasma-plots",
   "plasmacoll",
   "pyarrow",
@@ -28,7 +30,6 @@ dependencies = [
   "simgeometry",
   "slowcooker; python_version>='3.12'",
   "tree-d-3d",
-  "wellbalanced",
   "xarray",
 ]
 optional-dependencies.docs = [
@@ -49,7 +50,7 @@ ini_options.addopts = "-ra"
 beamtracer = { git = "https://github.com/max-models/beamtracer", branch = "devel" }
 freeofcharge = { git = "https://github.com/max-models/freeofcharge", branch = "devel" }
 opencr = { git = "https://github.com/max-models/opencr", branch = "devel" }
+plasma-carafe = { git = "https://github.com/max-models/carafe", branch = "devel" }
 plasma-plots = { git = "https://github.com/max-models/plasma-plots", branch = "devel" }
 slowcooker = { git = "https://github.com/max-models/slowcooker", branch = "devel" }
 tree-d-3d = { git = "https://github.com/max-models/tree-d-3d", branch = "devel" }
-wellbalanced = { git = "https://github.com/max-models/wellbalanced", branch = "devel" }
