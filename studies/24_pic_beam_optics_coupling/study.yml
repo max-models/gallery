@@ -1,0 +1,23 @@
+# Read by gallery-tools without running the script (see the Adding a study guide).
+category: Ion sources and extraction
+kind: verification
+public: true
+codes:
+- picnic
+- beamtracer
+- plasma-plots
+level: advanced
+summary: >-
+  picnic's PIC of the plasma and the meniscus coupled to beamtracer's steady beam optics
+  downstream through a hand-off plane and the PIC's face potential, iterated until it settles,
+  against PIC over the whole domain.
+docs_preset: full
+runtime: about 3 minutes (picnic over the whole domain and the coupled run, 18 000 steps each); the smoke preset about 20 seconds
+status: >-
+  The face potential settles in two exchanges (6.3, then 1.0 V, then within the 0.3 V noise of
+  the sampling window) and agrees with PIC over the whole domain within about 0.15 V away from
+  the y faces; the proton current and the rms divergence behind the EG agree within the scatter
+  between windows. A 2D proton case with an EG only 18 mm from the plasma: the coupling does not
+  save time here, and negative ions, co-extracted electrons, cylindrical and 3D geometry are not
+  covered. picnic's y faces are periodic and BeamOptics's have no normal field, which matches
+  for these electrodes, symmetric about the middle.

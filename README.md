@@ -27,6 +27,7 @@ Site: <https://max-models.github.io/gallery/>
 | [Two-stream threshold](https://max-models.github.io/gallery/studies/two-stream-threshold/) | verification | picnic, plasma-plots |
 | [Beam–plasma regimes](https://max-models.github.io/gallery/studies/beam-plasma-regimes/) | verification | picnic, plasma-plots |
 | [Diocotron instability](https://max-models.github.io/gallery/studies/diocotron-instability/) | verification | picnic, plasma-plots |
+| [PIC–beam-optics coupling](https://max-models.github.io/gallery/studies/pic-beam-optics-coupling/) | verification | picnic, beamtracer, plasma-plots |
 
 ## Running a study
 
