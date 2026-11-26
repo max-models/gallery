@@ -1,6 +1,6 @@
 {
   "source": "max-models/gallery-private",
-  "commit": "b2dcf10a6852035be48af05c0638960693b4a3ec",
+  "commit": "79393270774ac200ce4883372cbebe7f83ff94ae",
   "studies": [
     "01_exponential_decay",
     "02_einzel_lens_optimisation",
@@ -22,6 +22,7 @@
     "20_buneman_mass_scaling",
     "21_two_stream_threshold",
     "22_beam_plasma_regimes",
-    "23_diocotron_instability"
+    "23_diocotron_instability",
+    "24_pic_beam_optics_coupling"
   ]
 }
